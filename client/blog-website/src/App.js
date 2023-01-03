@@ -1,11 +1,10 @@
-import './App.css';
-
+import React from "react";
+import Homepage from "./pages/home";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Website Under Construction!!</h1>
-      </header>
+      <Homepage />
     </div>
   );
 }

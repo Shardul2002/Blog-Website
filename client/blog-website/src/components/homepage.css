@@ -1,0 +1,29 @@
+.nav-item{
+    margin-left: 100px;
+    padding-left: 10px;
+    
+}
+
+.navbar-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title{
+    margin-top: 50px;
+}
+
+.homepage-image{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+}
+
+.text{
+    margin-bottom: 100px;
+    text-decoration: black;
+}
