@@ -24,6 +24,25 @@
 }
 
 .text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 100px;
-    text-decoration: black;
+}
+
+.text1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 2em;
+}
+
+.aboutimage{
+    height: 500px;
+    width: 500px;
+    margin-right: 0px;
+}
+
+.publishbutton{
+    padding-left: 100px;
+}
+
+.compose{
+    margin-right: 100px;
 }
