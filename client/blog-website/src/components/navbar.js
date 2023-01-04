@@ -15,19 +15,21 @@ export default function Navbar(){
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav justify-content-end nav-item">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="/aboutus">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+                
                 <li class="nav-item">
                      <a class="nav-link disabled">Disabled</a>
                 </li>
+                
             </ul>
+            
+                            
             </div>
+            <button className="btn btn-outline-primary compose"><a class="nav-link" href="/compose">Compose</a></button>
             </div>
             </nav>
         </div>
