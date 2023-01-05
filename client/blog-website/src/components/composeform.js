@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 export default function ComposeForm(){
+
+    const [post,setPost]=useState({postTitle:"",postBody:""});
+
     return (
         <div className="container">
             <br />
