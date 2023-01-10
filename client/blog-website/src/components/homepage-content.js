@@ -39,7 +39,7 @@ export default function Homepagecontent(){
             <h1 className="carousel-caption text-muted text">Express Yourself!!</h1>
             <p className="carousel-caption text-muted font-italic text1">A Place for your thought,fears,finds,fads,obbsession and much more....</p>
             </div>
-            <div>  
+            <div className="container">  
                 {displayPost.map(post=>(
                     <h1>{post?.title} <br></br> {post?.content}</h1>
                     
