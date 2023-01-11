@@ -19,6 +19,7 @@ export default function GetNews(){
     return (
         <div>
         <div>
+            <h2>See,Whats Going on in India!!</h2>
             <button className="btn btn-primary" onClick={getNews}>Fetch News</button>
         </div>
         <div className="row">
