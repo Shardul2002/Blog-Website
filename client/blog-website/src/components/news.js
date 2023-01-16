@@ -18,9 +18,8 @@ export default function GetNews(){
     }
     return (
         <div>
-        <div>
-            <h2>See,Whats Going on in India!!</h2>
-            <button className="btn btn-primary" onClick={getNews}>Fetch News</button>
+        <div className="container">
+            <h2>See,Whats Going on in India!!<button className="btn btn-primary" onClick={getNews}>Fetch News</button></h2> 
         </div>
         <div className="row">
             {   data.map((value)=>{
@@ -31,7 +30,7 @@ export default function GetNews(){
                     <div class="card-body">
                     <h5 class="card-title">{value.title}</h5>
                     <p class="card-text">{value.description}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href={value.url} class="btn btn-primary">Read More</a>
                     </div>
                 </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-
+import {Link} from 'react-router-dom';
 
 
 export default function Homepagecontent(){
@@ -34,19 +34,29 @@ export default function Homepagecontent(){
     
     return (
         <div>
-            
+            <div className="row">
+            <h3>Articles for you</h3>
+            <a href="/news"><button>Get News</button></a>
+            </div>
+            <hr  style={{ color: '#000000', backgroundColor: '#000000',height: .5,borderColor : '#000000'}}/>
             <div className="container">  
                 <div>
                 <div>
                 {displayPost.map(post=>(
-                    <h1>{post?.title} <br></br> {post?.content}</h1>
+                    <div>
+                    <h1>{post?.title} </h1><br></br> <p>{post?.content.substr(0,100)+'...'}</p>
+                      <Link to='/post' state={{title:post.title,content:post.content}}>Read more</Link>  
+                    
+                    </div>
                     
                 ))}  
-                </div>   
+                </div> 
+                    
                 </div>           
                   
                 
             </div>
+            
         </div>
 
 
