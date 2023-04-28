@@ -47,7 +47,20 @@
     margin-right: 100px;
 }
 
-.card{
-    width: 18rem;
+.twitter{
+    padding: 20px;
+    position: sticky;
     
+}
+.post{
+    padding: 20px;
+}
+
+.navbar{
+    background-color: #C5C9C5;
+    color: white;
+}
+
+a {
+    color: white !important;
 }

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import axios from 'axios';
-
+import News from "../pages/news";
 export default function GetNews(){
     const [data,setdata]=useState([])
 
@@ -16,11 +16,15 @@ export default function GetNews(){
 
         
     }
+
+    useEffect(() => {
+        getNews();
+    }, []);
+    
     return (
         <div>
-        <div className="container">
-            <h2>See,Whats Going on in India!!<button className="btn btn-primary" onClick={getNews}>Fetch News</button></h2> 
-        </div>
+       
+        
         <div className="row">
             {   data.map((value)=>{
                 return (

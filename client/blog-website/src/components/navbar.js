@@ -2,13 +2,13 @@ import React from "react";
 import "./homepage.css";
 export default function Navbar(){
     return(
-        <div>
+        <div >
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-            <a class="navbar-brand navbar-title" href="#">
-                <img src="/images/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+            <img src="/images/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+            <div class="navbar-brand navbar-title" style={{color:"white",margin:"8px"}}>
                 Creative Minds
-            </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,14 +22,14 @@ export default function Navbar(){
                 </li>
                 
                 <li class="nav-item">
-                     <a class="nav-link disabled">Disabled</a>
+                     <a class="nav-link " href="/news">News</a>
                 </li>
                 
             </ul>
             
                             
             </div>
-            <button className="btn btn-outline-primary compose"><a class="nav-link" href="/compose">Compose</a></button>
+            <a class="nav-link" href="/compose"><button className="btn btn-outline-secondary compose">Compose</button></a>
             </div>
             </nav>
         </div>

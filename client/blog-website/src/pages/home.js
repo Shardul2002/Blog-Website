@@ -15,12 +15,13 @@ export default function Homepage(){
           <div className="col-9">
           <Homepagecontent />
           </div>
+          
           <div className="col-3">
           <Twitter />
           </div>
           </div>
           </div>
-          <GetNews />
+          
         </div>
     )
 }

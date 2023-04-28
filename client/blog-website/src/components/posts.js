@@ -34,18 +34,23 @@ export default function Homepagecontent(){
     
     return (
         <div>
-            <div className="row">
-            <h3>Articles for you</h3>
-            <a href="/news"><button>Get News</button></a>
-            </div>
+            
             <hr  style={{ color: '#000000', backgroundColor: '#000000',height: .5,borderColor : '#000000'}}/>
-            <div className="container">  
+            <div>  
                 <div>
                 <div>
                 {displayPost.map(post=>(
-                    <div>
-                    <h1>{post?.title} </h1><br></br> <p>{post?.content.substr(0,100)+'...'}</p>
-                      <Link to='/post' state={{title:post.title,content:post.content}}>Read more</Link>  
+                    <div className="post">
+                        <div className="card text-center">
+                            <div className="card-header">
+                            </div>
+                        <div className="card-body">
+                            <h3 className="card-title">{post?.title}</h3>
+                            <p classNmme="card-text">{post?.content.substr(0,100)+'....'}</p>
+    
+                        </div>
+                            <Link to='/post' state={{title:post.title,content:post.content}}> <div class="btn btn-primary" style={{margin:'10px'}}>Read more</div></Link>
+                            </div>
                     
                     </div>
                     
